@@ -56,6 +56,7 @@ TF:\
 ```
 cd JlFlash/bin-release
 dotnet JlFlash.exe            # 或直接双击 JlFlash.exe
+dotnet --roll-forward LatestMinor JlFlashGui.dll         #zhjf103：由于.net版本不同，经常无法运行，可通过这条命令运行，
 ```
 
 烧录时选择 `firmware/jl_isd.bin`，设备插 USB 后按提示操作即可。
@@ -74,6 +75,8 @@ dotnet JlFlash.exe            # 或直接双击 JlFlash.exe
 ```
 cd JlFlash/JlFlashGui/bin-release
 JlFlashGui.exe                # 直接双击
+由于.net的版本不一样，大都无法运行，可以用下面命令运行
+dotnet --roll-forward LatestMinor JlFlashGui.dll   #zhjf103
 ```
 
 ## 3. chip-manual — 芯片参考手册
